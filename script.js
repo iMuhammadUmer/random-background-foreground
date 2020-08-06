@@ -1,8 +1,5 @@
-const setBg = () => {
-  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  document.body.style.backgroundColor = "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
-};
+var myArray = ["Apples", "Bananas", "Pears"];
 
-genNew.addEventListener("click", setBg);
-setBg();
+var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+
+document.body.innerHTML = randomItem;
